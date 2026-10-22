@@ -1,4 +1,4 @@
-# linux-networking-cloud-infrastructure# Linux, Networking & Cloud Infrastructure 
+# Linux, Networking & Cloud Infrastructure 
 
 ## Project Overview
 This project demonstrates the deployment and configuration of a Linux server on Microsoft Azure. It covers securing SSH access, configuring Network Security Groups (NSG), Linux CLI operations (users, groups, permissions, processes), and deploying a live Nginx web service.
@@ -35,12 +35,15 @@ ls -l secret.txt
 ## 3. Service Deployment & Process Management
 Installed and managed the Nginx web server.
 
-bash
+![Active running Ngnix](https://github.com/Walcott-iam/linux-networking-cloud-infrastructure/blob/main/active%20running%20ngnix.png)
+
+```bash
 sudo apt update
 sudo apt install nginx -y
 sudo systemctl status nginx
+```
 
-### Users and Groups
+## 4. Users and Groups
 Created a dedicated group and user for cloud administration.
 ```bash
 sudo groupadd cloudadmins
@@ -49,7 +52,7 @@ sudo passwd devops_user
 ```
 ![user.png](https://github.com/Walcott-iam/linux-networking-cloud-infrastructure/blob/main/-t-c%20user.png)
 
-## 4. Test Connectivity
+## 5. Test Connectivity
 Successfully tested HTTP connectivity by accessing the VM's public IP in a web browser. The Nginx default welcome page loaded, proving the NSG firewall and web server were correctly configured.
 
-[INSERT SCREENSHOT 5 HERE - Browser showing the Nginx Welcome![Welcome to Nginx](https://github.com/Walcott-iam/linux-networking-cloud-infrastructure/blob/main/welcome%20to%20ngnix.png)
+![Welcome to Nginx](https://github.com/Walcott-iam/linux-networking-cloud-infrastructure/blob/main/welcome%20to%20ngnix.png)
