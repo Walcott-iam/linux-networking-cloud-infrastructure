@@ -30,7 +30,7 @@ echo "Secret Cloud Data" > secret.txt
 ls -l secret.txt
 chmod 600 secret.txt
 ls -l secret.txt
-![Alt Text]()
+![File permission](https://github.com/Walcott-iam/linux-networking-cloud-infrastructure/blob/main/file%20permission.png)
 
 ## 3. Service Deployment & Process Management
 Installed and managed the Nginx web server.
@@ -47,6 +47,7 @@ sudo groupadd cloudadmins
 sudo useradd -m -g cloudadmins -s /bin/bash devops_user
 sudo passwd devops_user
 ```
+![user.png](https://github.com/Walcott-iam/linux-networking-cloud-infrastructure/blob/main/-t-c%20user.png)
 
 ## 4. Test Connectivity
 Successfully tested HTTP connectivity by accessing the VM's public IP in a web browser. The Nginx default welcome page loaded, proving the NSG firewall and web server were correctly configured.
