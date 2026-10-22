@@ -1,4 +1,4 @@
-# linux-networking-cloud-infrastructure# Linux, Networking & Cloud Infrastructure - Task 2
+# linux-networking-cloud-infrastructure# Linux, Networking & Cloud Infrastructure 
 
 ## Project Overview
 This project demonstrates the deployment and configuration of a Linux server on Microsoft Azure. It covers securing SSH access, configuring Network Security Groups (NSG), Linux CLI operations (users, groups, permissions, processes), and deploying a live Nginx web service.
@@ -14,13 +14,13 @@ Configured the Azure firewall to allow:
 - Port 22 (SSH) for secure remote management.
 - Port 80 (HTTP) to serve web traffic to the internet.
 
-*[INSERT SCREENSHOT 1 HERE - Azure NSG Inbound Port Rules]*
+![Inbound rule](https://github.com/Walcott-iam/linux-networking-cloud-infrastructure/blob/main/inbound%20rule.png)
 
 ## 2. Linux CLI & User Management
 Connected to the VM via SSH and performed the following operations:
 
 ### SSH Connection
-*[INSERT SCREENSHOT 2 HERE - Terminal showing successful SSH login]*
+![Successful connection](https://github.com/Walcott-iam/linux-networking-cloud-infrastructure/blob/main/succesful%20login%20through%20terminal.png)
 
 File Permissions
 Demonstrated file permission changes using chmod. Restricted a file so only the owner can read and write.
@@ -30,7 +30,7 @@ echo "Secret Cloud Data" > secret.txt
 ls -l secret.txt
 chmod 600 secret.txt
 ls -l secret.txt
-[INSERT SCREENSHOT 3 HERE - Terminal showing user creation and chmod 600]
+![Alt Text]()
 
 ## 3. Service Deployment & Process Management
 Installed and managed the Nginx web server.
@@ -48,7 +48,7 @@ sudo useradd -m -g cloudadmins -s /bin/bash devops_user
 sudo passwd devops_user
 ```
 
-4. Test Connectivity
+## 4. Test Connectivity
 Successfully tested HTTP connectivity by accessing the VM's public IP in a web browser. The Nginx default welcome page loaded, proving the NSG firewall and web server were correctly configured.
 
-[INSERT SCREENSHOT 5 HERE - Browser showing the Nginx Welcome Page]
+[INSERT SCREENSHOT 5 HERE - Browser showing the Nginx Welcome![Welcome to Nginx](https://github.com/Walcott-iam/linux-networking-cloud-infrastructure/blob/main/welcome%20to%20ngnix.png)
