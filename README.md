@@ -22,9 +22,33 @@ Connected to the VM via SSH and performed the following operations:
 ### SSH Connection
 *[INSERT SCREENSHOT 2 HERE - Terminal showing successful SSH login]*
 
+File Permissions
+Demonstrated file permission changes using chmod. Restricted a file so only the owner can read and write.
+
+bash
+echo "Secret Cloud Data" > secret.txt
+ls -l secret.txt
+chmod 600 secret.txt
+ls -l secret.txt
+[INSERT SCREENSHOT 3 HERE - Terminal showing user creation and chmod 600]
+
+## 3. Service Deployment & Process Management
+Installed and managed the Nginx web server.
+
+bash
+sudo apt update
+sudo apt install nginx -y
+sudo systemctl status nginx
+
 ### Users and Groups
 Created a dedicated group and user for cloud administration.
 ```bash
 sudo groupadd cloudadmins
 sudo useradd -m -g cloudadmins -s /bin/bash devops_user
 sudo passwd devops_user
+```
+
+4. Test Connectivity
+Successfully tested HTTP connectivity by accessing the VM's public IP in a web browser. The Nginx default welcome page loaded, proving the NSG firewall and web server were correctly configured.
+
+[INSERT SCREENSHOT 5 HERE - Browser showing the Nginx Welcome Page]
